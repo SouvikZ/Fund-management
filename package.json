@@ -1,0 +1,19 @@
+{
+  "name": "financial-tracker",
+  "version": "1.0.0",
+  "description": "Financial Tracker Application with Node.js, React, and MSSQL",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && nodemon index.js",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["finance", "tracker", "expense", "income"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
